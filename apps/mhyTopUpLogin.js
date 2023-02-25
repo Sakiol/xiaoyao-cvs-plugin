@@ -22,16 +22,9 @@ export const rule = {
 	},
 	payOrder: {
 		/** 命令正则匹配 */
-		reg: '^#?原神(微信)?充值(微信)?(.*)$',
+		reg: '^#?原神(微信)?充值(微信)?(.*)|^#?订单查询|^#?商品列表',
 		/** 执行方法 */
-		describe: '原神充值（离线）'
-	}, payOrder: {
-		reg: "^#?商品列表",
-		describe: '原神充值商品列表'
-	},payOrder:{
-		reg:'^#?订单查询',
-		describe:'充值订单查询'
-	}
+		describe: '原神充值'
 }
 
 
